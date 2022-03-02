@@ -16,8 +16,8 @@ e=0
 f=0
 n=0
 
-#if [[ $a -lt 10 && $b -lt 10 && $c -lt 10 && $d -lt 10 && $e -lt 10 && $f -lt 10 ]]
-#then
+if [[ $a -le 10 && $b -le 10 && $c -le 10 && $d -le 10 && $e -le 10 && $f -le 10 ]]
+then
 case $randomCheck in
 	1)
 		a++
@@ -52,5 +52,5 @@ case $randomCheck in
 	*)
 esac
 #done
-#fi
+fi
 echo $a,$b,$c,$d,$e,$f
